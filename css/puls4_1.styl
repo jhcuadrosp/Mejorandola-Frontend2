@@ -1,0 +1,70 @@
+@import 'nib/vendor'
+
+@import 'nib/gradients'
+
+vendor-prefixes = o ms moz webkit
+
+
+javier = #E8E8E8
+gris_oscuro = #444
+nav_azul = #22BCE0
+
+body
+	background javier
+	color gris_oscuro
+	font-family Arial
+	font-size 16px
+
+header
+	background: linear-gradient(top, white, black)
+	color white
+	padding 0.5em
+
+	.logo
+		border-right 1px solid nav_azul
+		width 60px
+		
+		img
+			width 52px
+
+	.titular
+		margin 0 80px 0 70px
+		.titulo
+			font-size 18px
+			font-weight normal
+			margin 0
+			padding 0
+	.filtro
+		margin 0 10px 0 10px
+		color nav_azul
+		font-size 12px
+
+		transition 1s background
+		&:hover
+			background yellow
+
+	.publicar
+		margin 0 10px 0 550px
+		background orange
+		color gris_oscuro		
+
+
+
+	.usuario
+		.avatar
+			margin 0 0 300px
+			img 
+				width 50px
+				border-radius 50%
+		
+
+
+nav
+	background nav_azul
+
+
+.left
+	float left
+
+.right		
+	float right	
